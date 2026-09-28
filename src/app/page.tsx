@@ -3,6 +3,7 @@ import { education, profile, skills } from "@/data/profile";
 import { ContactForm } from "@/components/ContactForm";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
+import { Projects } from "@/components/Projects";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -79,7 +80,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="experience" aria-labelledby="experience-heading" className={`border-y border-line bg-surface ${section}`}>
+        <section id="projects" aria-labelledby="projects-heading" className={`border-y border-line bg-surface ${section}`}>
+          <div className={`${container} flex flex-col gap-12`}>
+            <SectionHeading
+              id="projects-heading"
+              eyebrow="Featured Work"
+              title="Selected Projects"
+              description="Side projects where I explore new parts of the React and Next.js ecosystem."
+            />
+            <Projects />
+          </div>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-heading" className={section}>
           <div className={`${container} flex flex-col gap-12`}>
             <SectionHeading
               id="experience-heading"
@@ -91,7 +104,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" aria-labelledby="education-heading" className={section}>
+        <section id="education" aria-labelledby="education-heading" className={`border-t border-line ${section}`}>
           <div className={`${container} grid gap-12 lg:grid-cols-2`}>
             <div className="flex flex-col gap-8">
               <SectionHeading id="education-heading" eyebrow="Academia" title="Education" />

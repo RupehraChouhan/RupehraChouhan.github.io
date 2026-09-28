@@ -24,7 +24,33 @@ export const profile = {
     "Senior front-end engineer with 9+ years of experience building large-scale web applications in React, TypeScript, and JavaScript. Specializes in front-end architecture, reusable UI components, accessibility, and web performance, with a track record of shipping experiments that turn trial users into paying customers. Experienced in mentoring engineers, setting testing and experimentation practices, and partnering with Design, Product, and QA across regular release cycles.",
 };
 
-export const skills: { group: string; items: string[] }[] = [
+export type Project = {
+  name: string;
+  description: string;
+  status?: string;
+  tags: string[];
+  liveUrl: string;
+  sourceUrl: string;
+  preview: { wordmark: string; sections: string[] };
+};
+
+export const projects: Project[] = [
+  {
+    name: "Top Stories: News Reader",
+    description:
+      "A responsive reader for New York Times top stories, built on the Next.js App Router. Articles are fetched on the server from the NYT Top Stories API with hourly revalidation, organized by section, and the app installs as a progressive web app.",
+    status: "In progress",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "NYT API", "PWA"],
+    liveUrl: "https://news-app-nyt.vercel.app/",
+    sourceUrl: "https://github.com/RupehraChouhan/news-app",
+    preview: {
+      wordmark: "Top Stories",
+      sections: ["Arts", "Business", "Opinion", "Politics", "Science", "Technology", "US", "World"],
+    },
+  },
+];
+
+export const skills:{ group: string; items: string[] }[] = [
   {
     group: "Front-End",
     items: ["JavaScript (ES6+)", "TypeScript", "React", "Redux", "Next.js", "HTML5", "CSS3", "Styled Components", "Tailwind CSS", "Storybook"],
