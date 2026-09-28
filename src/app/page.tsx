@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { education, highlights, profile, skills } from "@/data/profile";
+import { education, profile, skills } from "@/data/profile";
 import { ContactForm } from "@/components/ContactForm";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
@@ -43,16 +43,8 @@ export default function Home() {
 
         <section id="about" aria-labelledby="about-heading" className={`border-y border-line bg-surface ${section}`}>
           <div className={`${container} flex flex-col gap-8`}>
-            <SectionHeading id="about-heading" eyebrow="Biography" title="Front-end architecture that moves the numbers" />
+            <SectionHeading id="about-heading" eyebrow="Biography" title="Front-end architecture built for real customers" />
             <p className="text-base leading-[1.6] text-body">{profile.summary}</p>
-            <dl className="grid gap-6 sm:grid-cols-3">
-              {highlights.map((item) => (
-                <div key={item.label} className="flex flex-col-reverse gap-2 rounded-lg border border-line bg-subtle p-6">
-                  <dt className="text-[13px] text-muted">{item.label}</dt>
-                  <dd className="font-display text-4xl font-bold text-ink">{item.value}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </section>
 

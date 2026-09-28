@@ -24,12 +24,6 @@ export const profile = {
     "Senior front-end engineer with 9+ years of experience building large-scale web applications in React, TypeScript, and JavaScript. Specializes in front-end architecture, reusable UI components, accessibility, and web performance, with a track record of shipping experiments that turn trial users into paying customers. Experienced in mentoring engineers, setting testing and experimentation practices, and partnering with Design, Product, and QA across regular release cycles.",
 };
 
-export const highlights = [
-  { value: "20,000", label: "net new paid subscribers from trial-conversion experiments" },
-  { value: "9+", label: "years building large-scale web apps" },
-  { value: "5%", label: "customer growth from funnel experiments" },
-];
-
 export const skills: { group: string; items: string[] }[] = [
   {
     group: "Front-End",
@@ -65,7 +59,8 @@ export const experience: Job[] = [
           "Unified accountant and client navigation into One Left Navigation in React and TypeScript, adding localStorage persistence and cmd/shift-click new-tab support across QuickBooks Online (QBO).",
           "Fixed keyboard navigation and focus order (WCAG 2.1.1, 2.4.3) across Left Navigation and bookmarks, and added unit tests covering tab behavior.",
           "Improved web performance by deferring non-critical widgets until page ready, and designed RUM and failed-interaction monitoring that gave teams production visibility into page performance.",
-          "Scoped web-funnel tracking events with data science, surfacing experiments that increased customer growth by 5%, and introduced Applitools visual regression testing for pixel-accurate UI.",
+          "Scoped 17 web-funnel tracking events with data and analytics partners to close gaps in conversion reporting, and introduced Applitools visual regression testing for pixel-accurate UI.",
+          "Negotiated a formal 20% time allocation for operational excellence, giving the team dedicated capacity for on-call, refactoring, and tech-debt work alongside experiments.",
           "Mentored engineers on experiment setup and PR quality, led weekly AI learning sessions, and started a shared AI-skills repo used across the org.",
         ],
       },
